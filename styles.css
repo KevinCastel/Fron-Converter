@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    height: 150px;
+    background-color: #5e17eb;
+}
+
+h1{
+    margin-top: 30px;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: fit-content;
+    width: fit-content;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(43, 58, 103);
+    display:flex;
+    align-items: center;
+}
+
+#div-title {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+#div-information {
+    width: 100%;
+    background-color: #5e17eb;
+    height: 100%;
+}
+
+#div-register-link {
+    color: gray;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+#div-register-link a{
+    margin-top: 1.2rem;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+}
+
+#div-accounts{
+    height: 100%;
+    margin: 0 auto 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-infos{
+    border-radius: 2rem;
+    width: 40%;
+    background-color: rgb(244, 244, 249);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#div-sub-main-information{
+    width: 100%;
+    height: 50%;
+    z-index: 1;
+}
+
+#div-sub-main-information *{
+    width: 100%;
+    z-index: 2;
+}
+
+#div-sub-main-information * label{
+    width: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: rgb(0,0,0);
+    z-index: 3;
+}
+
+#div-sub-main-information * input{
+    color: white;
+    background-color: rgb(0, 123, 255);
+    font-size: 1.10rem;
+    width: 80%;
+    height: 2.20rem;
+    border-style: solid;
+    z-index: 3;
+}
+
+#div-mid-accounts{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#div-sub-information{
+    height: 100%;
+    min-width: 20%;
+    display: flex;
+    position: relative;
+}
+
+#div-sub-information *{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#div-sub-information * input{
+    color: white;
+    background-color: rgb(0, 123, 255);
+    width: 80%;
+    font-size: 1.23rem;
+    height: 2.20rem;
+}
+
+#div-sub-information * label{
+    color: rgb(0,0,0);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.div-input-main-information{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#div-register-with{
+    width: 100%;
+    height: 40%;
+    background-color: rgb(244, 244, 249);
+    z-index: 1;
+}
+
+
+#div-accounts-btns{
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.btn-accounts {
+    background-color: #4CAF50; /* Vert pour un look plus vibrant */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+}
+
+.btn-accounts:hover {
+    background-color: #45a049;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #4CAF50;
+}
+
+#bg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate( -50%, -50% );
+    z-index: 0;
+}
+
+#new_div{
+    display: none;
+    height: 55px;
+    width:55px;
+    background-color: red;
+}
