@@ -9,7 +9,7 @@ SOURCES = $(wildcard $(SRC_DIR)/*.c)
 OBJECTS = $(patsubst $(SRC_DIR)/%.c, $(BIN_DIR)/%.o, $(SOURCES))
 
 # Nom de l'exécutable final
-TARGET = $(BIN_DIR)/mon_application
+TARGET = $(BIN_DIR)/app
 
 # Cible par défaut
 all: $(TARGET)
