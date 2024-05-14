@@ -34,8 +34,15 @@ Pour installer, il vous faudra suivre les étapes suivante :
 
 ### Compilation du programme
 Il existe plusieurs manières pour compiler un programme en `C` depuis le `paquet gcc`.
-C'est une compilation avec nom de sortie que nous utiliserons ici:
-    1. **Naviguer jusqu'au répertoire du projet** `chemin/vers/HTMLCSS-TO-JS`
-    2. **Compiler avec la commande `gcc -o <file_out> <file_entry>`**
-        - **<file_out>** est le nom du fichier sortie
-        - **<file_entry>** est le programme en C qui va être compilé
+La compilation sera compilé depuis l'outil `MakeFile` en utilisant des règles écrite dans ce `MakeFile`.
+Le `MakeFile`est fournis, il est automatisé. Vous devez l'"executer" pour recompiler l'application avec les 
+commandes suivante:
+    1. **Ouvrer un terminal avec le raccourci clavier** `CTRL`+`ALT`+`T` 
+    2. **Naviguer jusqu'au répertoire du projet** `chemin/vers/HTMLCSS-TO-JS`
+    3. **Compiler avec la commande** `make`
+
+### Lancement de l'application
+Une fois la compilation terminée, vous pouvez lancer l'application avec les manipulations suivante:
+    1. **Ouvrer un terminal avec le raccourci clavier** `CTRL`+`ALT`+`T`
+    2. **Naviguer jusqu'au répertoire du projet** `chemin/vers/HTMLCSS-TO-JS`
+    3. **Lancer l'application avec la commande suivante** `./bin/app`
